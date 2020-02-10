@@ -1,0 +1,129 @@
+.nav-conversations{
+    /* temporary */
+    width: 23%;
+    border-right: 1px solid #f6fafd;
+}
+
+.nav-options{
+    display: flex;
+    /* justify-content: space-around; */
+
+    padding: 10px 0 10px 0;
+    border-bottom: 1px solid #f6fafd;
+
+    font-family: IBMPlexSans;
+    font-size: 12px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #6554c0;
+
+    /* height: 40px; */
+    
+    /* temporarary */
+    /* width: 45px; */
+}
+
+.nav-options>div{
+    height: 19px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.nav-options>div:first-child{
+    border-radius: 9px;
+    background-color: #f6fafd;
+    width: 52px;
+    height: 19px;
+    font-weight: bold;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-choices{
+    padding: 0 20px 0 20px;
+}
+
+
+.nav-item{
+    display: flex;
+    border-bottom: 1px solid #f6fafd;
+    padding: 20px 0 20px 0;
+    cursor: pointer;
+}
+
+.nav-item>div:first-child{
+    padding-right: 10px;
+}
+
+.item-contents{
+    display: flex;
+}
+
+.item-name{
+    height: 18px;
+    font-family: IBMPlexSans;
+    font-size: 14px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #212242;
+}
+
+.item-title {
+    height: 17px;
+    font-family: IBMPlexSans;
+    font-size: 13px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #212242;
+}
+
+.item-body{
+    height: 15px;
+    opacity: 0.75;
+    font-family: IBMPlexSans;
+    font-size: 12px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #595e8a;
+}
+
+.no-2 {
+    width: 14.8px;
+    height: 14.8px;
+    border-radius: 50%;
+    color: white;
+    background-color: #6554c0;
+    font-size: 10px;
+    text-align: center;
+    float: right;
+}
+
+.item-time{
+    height: 13px;
+    opacity: 0.5;
+    font-family: IBMPlexSans;
+    font-size: 10px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: right;
+    color: #5e6c84;
+}

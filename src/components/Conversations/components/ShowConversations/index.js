@@ -86,9 +86,12 @@ const ShowConversations =() =>{
                             <textarea 
                                 placeholder="Type a message…" 
                                 className="msg-input" 
-                                ref={chatMsg} onKeyDown={(e)=>e.key==='Enter' ? 
-                                    addChatMsg([...messages, {author: 'Collins Iheagwara', body: chatMsg.current.value, time: '02:00PM', isUser: true,}]) :
-                                    console.log('no') }/>
+                                ref={chatMsg} onKeyDown={(e)=>{
+                                    if(e.key==='Enter') { 
+                                        addChatMsg([...messages, {author: 'Collins Iheagwara', body: chatMsg.current.value, time: '02:00PM', isUser: true,}])
+                                        chatMsg.current.value=''
+                                    }
+                                    }}/>
                             <img src={attachment} alt="" className="chat-attach" />
                         </div>
                     </div>
@@ -109,7 +112,11 @@ const ShowConversations =() =>{
                             <img src={user} alt="" />
                             <input type="text" ref={comment} className="comment-input" placeholder="Write your comment…." />
                             <button
-                                onClick={()=> addComments([...comments, comment.current.value])}
+                                onClick={()=> {
+                                    addComments([...comments, comment.current.value])
+                                    comment.current.value=""
+                                
+                                }}
                                 // onClick={()=> console.log(comment.current.value)}
 
                                 className="comment-btn"
